@@ -28,4 +28,9 @@ public class CreateMessageActivity extends Activity {
         setContentView(R.layout.activity_create_message);
     }
 
+    //call
+    public void onSendMessage(View view){
+        
+    }
+
 }
