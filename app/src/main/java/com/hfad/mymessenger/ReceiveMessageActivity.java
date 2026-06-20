@@ -28,5 +28,9 @@ public class ReceiveMessageActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive_message);
+        Intent intent = getIntent();
+        String messageText = intent.getStringExtra(this.EXTRA_MESSAGE);
+        TextView messageView = (TextView) findViewById(R.id.message);
+        messageView.setText(messageText);
     }
 }
