@@ -2,7 +2,8 @@ package com.hfad.mymessenger;
 
 import android.app.Activity;
 import android.os.Bundle;
-
+import android.content.Intent;
+import android.widget.TextView;
 /**
  *            |    |    |
  *           )_)  )_)  )_)
@@ -20,6 +21,8 @@ import android.os.Bundle;
  * @author Rolando <rgarro@gmail.com>
  */
 public class ReceiveMessageActivity extends Activity {
+
+    public static final String EXTRA_MESSAGE = "message";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
